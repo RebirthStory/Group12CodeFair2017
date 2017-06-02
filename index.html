@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+	<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/code_fair.css">
+</head>
+
+<body class="main-bgimg">
+
+
+	<header class="u-clearfix">
+
+		<input class="cb-toggle" type="checkbox" id="cbMenu">
+
+		<label for="cbMenu" class="menu-icon">
+			<i class="fa fa-fw fa-lg"></i>
+		</label>
+		<div class="c-logo">
+			<a href="index.html">
+			 <img class="c-logo__img" src="images/logo.png" alt="Code Fair Logo">
+			</a>
+		</div>
+        <nav>
+          <ul>
+            <li id="login">
+              <a id="login-trigger" href="#">
+                Log in <span>▼</span>
+              </a>
+              <div id="login-content">
+                <form>
+                  <fieldset id="inputs">
+                    <input id="studentid1" type="text" name="studentid1" placeholder="Your Student ID" required> 
+                    <input id="password" type="password" name="Password" placeholder="Password" required>
+                  </fieldset>
+                  <fieldset id="actions">
+                    <input type="submit" id="submit" value="Log in">
+                  </fieldset>
+                </form>
+              </div>                     
+            </li>
+          </ul>
+        </nav>
+        
+        <input class="search-bar" type="text" name="search" placeholder="Search..">
+		
+		<nav class="menu">
+            <a class="menu__link" id="on-page" href="index.html" title="Home">Home</a>
+            <a class="menu__link" href="register.html" title="Register">Register</a>
+            <a class="menu__link" href="about.html" title="About">About</a>
+            <a class="menu__link" href="contact.html" title="Contact">Contact</a>
+			
+		</nav>
+
+
+	</header>
+
+	<main>
+			<section class="main">
+            <div class="slideshow">
+                <!-- Reference for slideshow - Bootstrap v3.3.7 (http://getbootstrap.com) -->
+                <slide>
+                    <div class="slide">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <!-- SLIDE 1 START -->
+                                <div class="item"> <img class="first-slide responsive-image slide_style" src="images/home_slide1.jpg" alt="Code Fair 2016 photo - Students participating in coding competition showcasing their project">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <h2>IT CODE FAIR 2017</h2><a class="btn btn-lg btn-primary button_style" href="register.html" role="button" aria-label="register button that links to register page">Register Now</a> </div>
+                                    </div>
+                                </div>
+                                <!-- SLIDE 2 START -->
+                                <div class="item active"> <img class="second-slide responsive-image slide_style" src="images/home_slide2.jpg" alt="Code Fair 2016 photo - Students participating in coding competition showcasing their project">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <h2>IT CODE FAIR 2017</h2> <a class="btn btn-lg btn-primary button_style" href="register.html" role="button" aria-label="register button that links to register page">Register Now</a> </div>
+                                    </div>
+                                </div>
+                                <!-- SLIDE 3 START -->
+                                <div class="item active2"> <img class="third-slide responsive-image slide_style" src="images/home_slide3.jpg" alt="Code Fair 2016 photo - A student participating in coding competition showcasing his project">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <h2>IT CODE FAIR 2017</h2><a class="btn btn-lg btn-primary button_style" href="register.html" role="button" aria-label="register button that links to register page">Register Now</a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SLIDE SHOW END -->
+                    <!-- Count Down Start -->
+                    <div class="row">
+                        <div class="counter">
+                            <h3>The IT Code Fair is on the 11th of November 2017 at Charles Darwin University!</h3>
+                            <div id="countdown"></div>
+                        </div>
+                    </div>
+                    <!-- Count Down End -->
+                </slide>
+            </div>
+            <div class="important_information">
+
+                <h2 class="important_h2">What's on?</h2>
+                <p class="important_paragraph">There are six major activities to look forward to:</p>
+            </div>
+            
+            <article class="about_code">
+                <figure class="align_left"><img src="images/about_code.jpg" alt="Code Fair 2016 photo - Student holding laptop with programmed game showing on laptop screen"></figure>
+                <div class="align_right right_writing">
+                    <h2>Coding Competition</h2>
+                    <p class="coding_paragraph">This competition is open to all IT students (VET, and Higher Education) who can create Apps, Programs, Mobile Prototypes, Websites, Games that demonstrate their developing knowledge, skills in building elegant, maintainable code that works! </p>
+                </div>
+            </article>
+            <article id="workshop" class="about_poster">
+                <figure class="align_right"><img src="images/about_poster.jpg" alt="Code Fair 2016 photo - Student holding an award for the poster competition with IT industry people"></figure>
+                <div class="align_left left_writing">
+                    <h2>Poster Competition</h2>
+                    <p>The poster competition aims to encourage students to communicate their IT work and develop and expand their visual communication skills.We encourage students whose IT pathways to a future career is in the more analytical aspects of the profession.</p>
+                </div>
+            </article>
+            <article id="employer" class="about_workshop">
+                <figure class="align_left"><img src="images/about_workshop.jpg" alt="Code Fair 2016 photo - Student with lady in workshop session"></figure>
+                <div class="align_right right_writing">
+                    <h2>Code Hour Workshops</h2>
+                    <p>Supporting the global ‘Hour of Code’ initiative to develop coding literacies. Any high school teachers and students that are interested please join us!</p>
+                </div>
+            </article>
+            <article class="about_employer">
+                <figure class="align_right"><img src="images/about_employer.jpg" alt="Code Fair 2016 photo - Student participating in speed dating with employers"></figure>
+                <div class="align_left left_writing">
+                    <h2>Industry Employer Speed Dating</h2>
+                    <p>Employer Speed Dating provides students an opportunity to meet local IT industry employers. There are two speed dating categories for students to enter: Developer and IT Support. </p>
+                </div>
+            </article>
+            <article id="awards" class="about_business">
+                <figure class="align_left"><img src="images/about_business.jpg" alt="Code Fair 2016 photo - Student holding mobile phone with application running"></figure>
+                <div class="align_right right_writing">
+                    <h2>Business Innovation Challenge</h2>
+                    <p>This challenge, provided by the NT government, presents a real-life problem to students regarding how to communicate NT Road conditions using 21st century technologies.</p>
+                </div>
+            </article>
+            <article class="about_awards">
+                <figure class="align_right"><img src="images/about_award.jpg" alt="Code Fair 2016 photo - Students holding awards with IT industry person"></figure>
+                <div class="align_left left_writing">
+                    <h2>Academic Excellence Awards</h2>
+                    <p>This event is held to encourage a greater emphasis on academic endeavours and to recognise students who achieve highly in each subject taught in IT. Students who receive this award earn the highest scores in each unit.</p>
+                </div>
+            </article>  
+            <div class="home_table">
+                <table>
+                    <caption>Competitions and Prizes</caption>
+                    <tr>
+                        <th scope="col">Competition</th>
+                        <th scope="col">Prize</th>
+                    </tr>
+                    <tr>
+                        <td>Poster Competition</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Coding Competition - Novice</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Coding Competition - Advanced</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Business Innovation Challenge</td>
+                        <td>$400</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <aside>
+            <div class="sponsor">
+                <h3>Sponsors</h3>
+                <img class="sponsor-pic" src="images/Sponsors.png" alt="Code Fair Sponsors">
+            </div>
+        </aside>
+        <footer><span class="legend">by Group 12 &copy</span>
+            <div class="menu__social">
+				<a href="#" class="menu__social-link"><i class="fa fa-2x fa-facebook-square"></i></a>
+				<a href="#" class="menu__social-link"><i class="fa fa-2x fa-twitter"></i></a>
+			</div>
+        
+        
+        </footer>
+
+	</main>
+    <script src="js/countdown.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

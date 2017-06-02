@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/code_fair.css">
+</head>
+
+<body class="main-bgimg">
+
+	<header class="u-clearfix">
+
+		<input class="cb-toggle" type="checkbox" id="cbMenu">
+
+		<label for="cbMenu" class="menu-icon">
+			<i class="fa fa-fw fa-lg"></i>
+		</label>
+		<div class="c-logo">
+			<a href="index.html">
+			 <img class="c-logo__img" src="images/logo.png" alt="Code Fair Logo">
+			</a>
+		</div>
+        <nav>
+          <ul>
+            <li id="login">
+              <a id="login-trigger" href="#">
+                Log in <span>▼</span>
+              </a>
+              <div id="login-content">
+                <form>
+                  <fieldset id="inputs">
+                    <input id="studentid1" type="text" name="studentid1" placeholder="Your Student ID" required> 
+                    <input id="password" type="password" name="Password" placeholder="Password" required>
+                  </fieldset>
+                  <fieldset id="actions">
+                    <input type="submit" id="submit" value="Log in">
+                  </fieldset>
+                </form>
+              </div>                     
+            </li>
+          </ul>
+        </nav>
+         
+		<input class="search-bar" type="text" name="search" placeholder="Search..">
+		<nav class="menu">
+            <a class="menu__link" href="index.html" title="Home">Home</a>
+            <a class="menu__link" id="on-page" href="register.html" title="Register">Register</a>
+            <a class="menu__link" href="about.html" title="About">About</a>
+            <a class="menu__link" href="contact.html" title="Contact">Contact</a>			
+		</nav>
+        
+	</header>
+
+	<main>
+		<div class="main">
+			<section>
+				<form class="form" id="myForm" ... onsubmit="return checkForm(this);">
+                        <fieldset>
+                            <legend><span class="form-header">Personal information:</span></legend>
+                                <label class="label">*Student ID:</label>
+                                    <input class="input" type="text" id="studentid" placeholder="*Student ID.." maxlength="7"><br><br>
+                                <label class="label">*Full name:</label>
+                                    <input class="input" type="text" id="name" placeholder="*Full name.."><br><br>
+                                <label class="label">*Email:</label>
+                                    <input class="input" type="text" id="email" placeholder="*Email.."><br><br>
+                            <label class="label">*Password:</label> 
+								<input class="input" type="password" id="pass1" placeholder="*Password.."><br><br>
+							<label class="label">*Confirm Password:</label> 
+								<input class="input" type="password" id="pass2" placeholder="*Confirm Password.."><br><br>
+                            </fieldset>
+							<fieldset>
+                                <legend><span class="form-header">Involve in events:</span></legend>
+                                <input class="checkbox" type="checkbox" name="code" id="code"> <span>Coding competition</span><br><br>
+                                <input class="checkbox" type="checkbox" name="business" id="business"> <span> Business innovation</span><br><br>
+                                <input class="checkbox" type="checkbox" name="poster" id="poster"> <span> Poster</span><br><br>
+                                <input class="checkbox" type="checkbox" name="workshop" id="workshop"> <span> Coding workshop</span><br><br>
+                                <input class="checkbox" type="checkbox" name="date" id="date"> <span> Speed dating</span><br>                    
+                            </fieldset>
+
+							<input class="form-button" id="clear" type="reset" value="Clear">
+							<input class="form-button" id="submit" type="button" value="Submit" onclick="checkForm()">
+				</form>
+			</section>
+            
+           
+		</div>
+        </main>
+        <aside>
+            <div class="sponsor">
+                <h3>Sponsors</h3>
+                <img class="sponsor-pic" src="images/Sponsors.png" alt="Code Fair Sponsors">
+            </div>
+        </aside>
+        <footer><span class="legend">by Group 12 &copy</span>
+            <div class="menu__social">
+				<a href="#" class="menu__social-link"><i class="fa fa-2x fa-facebook-square"></i></a>
+				<a href="#" class="menu__social-link"><i class="fa fa-2x fa-twitter"></i></a>
+			</div>
+        
+        
+        </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
+    
+    
+
+
+</body>
+</html>
