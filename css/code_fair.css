@@ -108,7 +108,7 @@ header {
 /* Search bar
    ------------------------------------------------------------ */
 .search-bar{
-    width: 120px;
+    width: 100px;
     margin-right: 4%;
     margin-top: 0.25em;
     box-sizing: border-box;
